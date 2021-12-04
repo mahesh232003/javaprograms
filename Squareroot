@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Squareroot
+{
+	public static void main(String[] args)
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int a= sc.nextInt();
+		double n=Math.sqrt(a);
+		System.out.printf("Square root is = %.2f\n",n);
+	}
+}
+		
