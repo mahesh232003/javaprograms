@@ -1,0 +1,24 @@
+class box
+{
+double length;
+double breadth;
+double height;
+box()
+{
+length=10.0;
+breadth=10.0;
+height=10.0;
+}
+double volume()
+{
+return length*breadth*height;
+}
+}
+class volumeofbox
+{
+public static void main(String[] args)
+{
+box b=new box();
+System.out.println("volume is "+b.volume());
+}
+}
