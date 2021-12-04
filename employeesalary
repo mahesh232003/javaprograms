@@ -1,0 +1,53 @@
+import java.util.Scanner;
+class employee
+{
+	int salary;
+	float worktime;
+	String name,id;
+	void getinfo(String name1,String id1,int salary1,float worktime1)
+	{
+		name=name1;
+		id=id1;
+		salary=salary1;
+		worktime=worktime1;
+	}
+	void Addsal()
+	{
+		if (salary<500)
+		{
+			salary=salary+10;
+		}
+		System.out.println("Addsal method");
+		System.out.println("Salary per day is"+salary);
+		System.out.println("Salary per month is"+(salary*30)); 
+	}
+	void Addwork()
+	{
+		if (worktime>6.0)
+		{
+			salary=salary+5;
+		}
+		System.out.println("Addwork method");
+		System.out.println("Salary per day is"+salary);
+		System.out.println("Salary per month is"+(salary*30));
+	}
+}
+public class employeesalary
+{
+	public static void main(String args[])
+	{
+		int n;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number of employees");
+		n=sc.nextInt();
+		while(n>0)
+		{
+			employee e1=new employee();
+			e1.getinfo(sc.next(),sc.next(),sc.nextInt(),sc.nextFloat());
+			e1.Addsal();
+			e1.Addwork();
+			n--;	
+		}
+	}
+}
+
