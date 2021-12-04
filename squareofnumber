@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class squareofnumber
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.printf("Enter number to find square:");
+int a=sc.nextInt();
+System.out.printf("Square is:"+a*a);
+}
+}
