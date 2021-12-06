@@ -1,0 +1,21 @@
+import java.util.*;
+class usestatic
+{
+	static int a=2;
+	static int b;
+   	static void fun(int x)
+	{
+		System.out.println(x);
+		System.out.println(a);
+		System.out.println(b);
+	}
+	static
+	{
+		System.out.println("Static block executed");
+		b=a*4;
+	}
+	public static void main(String args[])
+	{
+		fun(10);
+	}
+}
