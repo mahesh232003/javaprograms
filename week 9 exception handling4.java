@@ -21,3 +21,12 @@ class TestFinallyBlock
 		System.out.println("rest of the code...");
 	}
 }
+
+
+
+
+/*output
+5
+finally block is always executed
+rest of the code...
+*/
