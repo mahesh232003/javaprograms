@@ -24,7 +24,6 @@ class TestFinallyBlock
 
 
 
-
 /*output
 5
 finally block is always executed
