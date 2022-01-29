@@ -1,6 +1,5 @@
 //case 2 of finally block if exception is not handled
-
-TestFinallyBlocclass TestFinallyBlock1
+class TestFinallyBlock1
 {
   public static void main(String args[])
   {
@@ -25,3 +24,11 @@ TestFinallyBlocclass TestFinallyBlock1
     System.out.println("rest of the code...");
   } 
 }
+
+
+
+/*output
+finally block is always executed
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at TestFinallyBlock1.main(TestFinallyBlock1.java:9)
+        */
